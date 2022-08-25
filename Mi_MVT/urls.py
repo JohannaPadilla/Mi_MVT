@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from MiApp.views import home, cargadatos, mostrar_familiares, cargarmascota
+from MiApp.views import home, cargadatos, mostrar_familiares, cargarmascota, mostrar_mascotas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home),
     path('carga/', cargadatos),
     path('familiares/', mostrar_familiares),
-    path('mascotas/<str:nombre>/<str:especie>', cargarmascota)
+    path('mascotas/<str:nombre>/<str:especie>', cargarmascota),
+    path('lasmascotas/', mostrar_mascotas)
 ]

@@ -23,6 +23,17 @@ body {
     margin-bottom: 5cm;
 }
 
+.navbar {
+    background-color: crimson;
+    height: 2cm;
+}
+
+.boton {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #3f95ea;
+}
+
 /* Style de html ingreso */
 h1 {
     background-image: linear-gradient(to right top, #12311a, #60d86e, #c1e3c1, #5ac05e, #12311a);

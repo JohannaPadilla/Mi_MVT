@@ -7,15 +7,15 @@ def home(request):
 
 def cargadatos(request):
     familia = Familia.objects.create(
-                                        nombre = "Juna Pablo", 
-                                        apellido = "Gondra", 
-                                        fecha_nacimiento = "1987-07-19", 
+                                        nombre = "Hugo", 
+                                        apellido = "Padilla", 
+                                        fecha_nacimiento = "1957-05-19", 
                                         mail = "gp@gmail.com", 
-                                        edad = 35, 
-                                        nacionalidad = "Argentina", 
-                                        genero = "Femenino", 
-                                        relacion = "Es mi hermana", 
-                                        mascotas = {"Charly"}, 
+                                        edad = 65, 
+                                        nacionalidad = "Argentino", 
+                                        genero = "Masculino", 
+                                        relacion = "Es mi Padre", 
+                                        mascotas = {"No tiene mascotas"}, 
                                         fecha_creacion = ''
                                     )
     context = {'familia': familia}
@@ -33,3 +33,7 @@ def cargarmascota(request, nombre, especie):
                                     )
     context = {'mascotas': mascotas}
     return render(request, 'cargamascotas.html', context) 
+
+def mostrar_mascotas(request):
+    mascotas = Mascotas.objects.all()
+    return render(request, "lasmascotas.html", {"mascotas": mascotas})
