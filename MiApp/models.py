@@ -13,3 +13,8 @@ class Familia(models.Model):
     relacion = models.CharField(max_length=40)
     mascotas = models.CharField(max_length=100)
     fecha_creacion = models.DateField(auto_now=True)
+
+class Mascotas(models.Model):
+        nombre = models.CharField(max_length=40)
+        especie = models.CharField(max_length=40)
+        fecha_creacion = models.DateField(auto_now=True)

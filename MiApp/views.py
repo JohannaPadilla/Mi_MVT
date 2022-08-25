@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Familia
+from .models import Familia, Mascotas
 
 # Create your views here.
 def home(request):
@@ -19,8 +19,17 @@ def cargadatos(request):
                                         fecha_creacion = ''
                                     )
     context = {'familia': familia}
-    return render(request, 'ingreso.html', context) 
+    return render(request, 'carga.html', context) 
 
 def mostrar_familiares(request):
     familiares = Familia.objects.all()
     return render(request, "misfamiliares.html", {"familiares": familiares})
+
+def cargarmascota(request, nombre, especie):
+    mascotas = Mascotas.objects.create(
+                                        nombre = nombre, 
+                                        especie = especie, 
+                                        fecha_creacion = ''
+                                    )
+    context = {'mascotas': mascotas}
+    return render(request, 'cargamascotas.html', context) 

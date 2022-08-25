@@ -1,0 +1,25 @@
+{% load style %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App Mvt Padilla</title>
+    <link rel="icon" href="../static/torojp-16x16.png">
+    <link rel="Stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Cargando datos de mascota</h1>
+    <div>    
+        <h2>Fueron cargados los siguentes datos del mascotas:</h2>
+            <p>            
+                Nombre: {{mascotas.nombre}}
+                <br>
+                Especie: {{mascotas.especie}}
+                <br>
+                Fecha de creacion: {{mascotas.fecha_creacion}}
+            </p>
+    </div>
+</body>
+</html>
