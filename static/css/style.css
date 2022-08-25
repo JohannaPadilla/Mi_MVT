@@ -1,0 +1,96 @@
+/* Body igual en todos los html */
+@import url('https://fonts.googleapis.com/css2?family=Sansita:wght@700&display=swap');
+
+body {
+    position: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: .9;
+    backface-visibility: hidden;
+    background-color: #52d3aa;
+    background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
+}
+
+/* Style de html home */
+#img_python{
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5cm;
+    margin-bottom: 5cm;
+}
+
+/* Style de html ingreso */
+h1 {
+    background-image: linear-gradient(to right top, #12311a, #60d86e, #c1e3c1, #5ac05e, #12311a);
+    text-decoration: underline;
+    color:rgb(0, 0, 0) ; 
+    text-align: center; 
+    border-radius: 15px;
+    /* font-style: italic; */
+    font-family: 'Sansita', sans-serif;
+    /* font-weight: 400; */
+    font-size: 2cm;
+    width: 30cm;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3cm;
+    border-style: solid;
+    padding: 0.5cm 0.5cm 0.5cm 0.5cm;
+}
+div{
+    background-image: linear-gradient(to top, #2ce55a, #60d86e, #7dcb7f, #91bd90, #a1afa0);
+    border-radius: 15px;
+    font-size: 2cm;
+    width: 30cm;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5cm;
+    border-style: double double solid solid;
+    padding: 0.5cm 0.5cm 0.5cm 0.5cm;
+}
+
+p{
+    color:rgb(0, 0, 0) ; 
+    text-align: left; 
+    font-style: normal;
+    font-size: 1cm;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 1cm;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* Style de html misfamiliares */
+#div_1{
+    background-image: linear-gradient(to top, #2ce55a, #60d86e, #7dcb7f, #91bd90, #a1afa0);
+    border-radius: 15px;
+    width: 30cm;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double double solid solid;
+    padding: 0.5cm 0.5cm 0.5cm 0.5cm;
+}
+
+#p_3{
+    color:rgb(0, 0, 0) ; 
+    text-align: left; 
+    font-style: normal;
+    font-size: 0.7cm;
+}
+
+#h2_2{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-size: 1cm;
+    text-decoration: underline;
+    font-style: italic;
+}

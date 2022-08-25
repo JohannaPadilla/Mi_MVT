@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS = ['D:/Johi/Desktop/Mi_MVT/static']
 
 # Application definition
 
